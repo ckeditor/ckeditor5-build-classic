@@ -27,7 +27,8 @@
     "regenerator-runtime": "^0.10.3",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",
-    "webpack": "^2.3.2"
+    "webpack": "^2.3.2",
+    "webpack-bundle-analyzer": "^2.4.0"
   },
   "engines": {
     "node": ">=6.0.0",

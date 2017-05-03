@@ -10,6 +10,7 @@ const webpack = require( 'webpack' );
 const { bundler } = require( '@ckeditor/ckeditor5-dev-utils' );
 
 const BabiliPlugin = require( 'babili-webpack-plugin' );
+const BundleAnalyzerPlugin = require( 'webpack-bundle-analyzer' ).BundleAnalyzerPlugin;
 
 module.exports = {
 	devtool: 'source-map',
@@ -29,7 +30,8 @@ module.exports = {
 		new webpack.BannerPlugin( {
 			banner: bundler.getLicenseBanner(),
 			raw: true
-		} )
+		} ),
+		new BundleAnalyzerPlugin()
 	],
 
 	module: {
