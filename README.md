@@ -28,6 +28,11 @@ npm install --save @ckeditor/ckeditor5-build-classic
 And use it in your website:
 
 ```html
+<head>
+	...
+	<link rel="stylesheet" href="./node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.css">
+</head>
+
 <div id="editor">
 	<p>This is the editor content.</p>
 </div>

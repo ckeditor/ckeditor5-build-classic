@@ -3,9 +3,12 @@
  * For licensing, see LICENSE.md.
  */
 
+require( '../../build/ckeditor.css' );
+
 const ClassicEditor = require( '../../build/ckeditor' ).ClassicEditor;
 
-ClassicEditor.create( document.querySelector( '#editor' ) )
+ClassicEditor
+	.create( document.querySelector( '#editor' ) )
 	.then( editor => {
 		window.editor = editor;
 	} )

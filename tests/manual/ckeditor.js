@@ -3,9 +3,12 @@
  * For licensing, see LICENSE.md.
  */
 
+import '../../build/ckeditor.css';
+
 import { ClassicEditor } from '../../build/ckeditor';
 
-ClassicEditor.create( document.querySelector( '#editor' ) )
+ClassicEditor
+	.create( document.querySelector( '#editor' ) )
 	.then( editor => {
 		window.editor = editor;
 	} )

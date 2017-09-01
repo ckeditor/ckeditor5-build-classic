@@ -12,6 +12,7 @@ const webpack = require( 'webpack' );
 const { bundler } = require( '@ckeditor/ckeditor5-dev-utils' );
 const CKEditorWebpackPlugin = require( '@ckeditor/ckeditor5-dev-webpack-plugin' );
 const BabiliPlugin = require( 'babel-minify-webpack-plugin' );
+const ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
 const buildConfig = require( './build-config' );
 
 module.exports = {
@@ -26,6 +27,7 @@ module.exports = {
 	},
 
 	plugins: [
+		new ExtractTextPlugin( 'ckeditor.css' ),
 		new CKEditorWebpackPlugin( {
 			languages: [ buildConfig.language ]
 		} ),
@@ -46,16 +48,18 @@ module.exports = {
 			},
 			{
 				test: /\.scss$/,
-				use: [
-					'style-loader',
-					{
-						loader: 'css-loader',
-						options: {
-							minimize: true
-						}
-					},
-					'sass-loader'
-				]
+				use: ExtractTextPlugin.extract( {
+					fallback: 'style-loader',
+					use: [
+						{
+							loader: 'css-loader',
+							options: {
+								minimize: true
+							}
+						},
+						'sass-loader'
+					]
+				} )
 			}
 		]
 	}
