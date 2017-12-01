@@ -9,11 +9,14 @@
 
 const path = require( 'path' );
 const webpack = require( 'webpack' );
+const CleanWebpackPlugin = require( 'clean-webpack-plugin' );
 const { bundler } = require( '@ckeditor/ckeditor5-dev-utils' );
 const { getPostCssConfig } = require( '@ckeditor/ckeditor5-dev-utils' ).styles;
 const CKEditorWebpackPlugin = require( '@ckeditor/ckeditor5-dev-webpack-plugin' );
 const BabiliPlugin = require( 'babel-minify-webpack-plugin' );
 const buildConfig = require( './build-config' );
+
+const OUTPUT_DIRECTORY = path.resolve( __dirname, 'build' );
 
 module.exports = {
 	devtool: 'source-map',
@@ -21,7 +24,7 @@ module.exports = {
 	entry: path.resolve( __dirname, 'src', 'ckeditor.js' ),
 
 	output: {
-		path: path.resolve( __dirname, 'build' ),
+		path: OUTPUT_DIRECTORY,
 		filename: 'ckeditor.js',
 		libraryTarget: 'umd',
 		libraryExport: 'default',
@@ -29,6 +32,7 @@ module.exports = {
 	},
 
 	plugins: [
+		new CleanWebpackPlugin( [ OUTPUT_DIRECTORY ] ),
 		new CKEditorWebpackPlugin( {
 			language: buildConfig.config.language,
 			additionalLanguages: 'all'
