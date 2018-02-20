@@ -34,7 +34,7 @@ module.exports = {
 	],
 
 	// UI language. Language codes follow the https://en.wikipedia.org/wiki/ISO_639-1 format.
-	language: 'en',
+	language: 'fr',
 
 	// Editor config.
 	config: {
