@@ -43,6 +43,7 @@ ClassicEditor.build = {
 		ParagraphPlugin
 	],
 	config: {
+		extraPlugins: 'autolink',
 		toolbar: {
 			items: [
 				'heading',
