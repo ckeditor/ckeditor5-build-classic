@@ -25,7 +25,7 @@ export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins which will be automatically loaded when creating an instance of this editor build.
 // Note: New plugins should not be added to an existing editor build. They should be added at this stage.
-ClassicEditor.builtinPlugins = [
+ClassicEditor.defaultPlugins = [
 	EssentialsPlugin,
 	UploadAdapterPlugin,
 	AutoformatPlugin,
@@ -44,12 +44,12 @@ ClassicEditor.builtinPlugins = [
 	ParagraphPlugin
 ];
 
-// The default config of this editor build.
+// The default configuration of this editor build.
 // It can be overridden by passing your own options to the `create()` method.
 //
 // See all the configuration options:
 // https://docs.ckeditor.com/ckeditor5/latest/api/module_core_editor_editorconfig-EditorConfig.html
-ClassicEditor.builtinConfig = {
+ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
 			'heading',
