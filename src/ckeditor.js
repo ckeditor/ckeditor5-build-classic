@@ -72,5 +72,10 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'imageTextAlternative'
 		]
-	}
+	},
+
+	// UI language. Language codes follow the https://en.wikipedia.org/wiki/ISO_639-1 format.
+	//
+	// See: https://docs.ckeditor.com/ckeditor5/latest/features/ui-language.html
+	language: 'en'
 };

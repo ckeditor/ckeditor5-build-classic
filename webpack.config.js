@@ -31,6 +31,8 @@ module.exports = {
 	plugins: [
 		new CKEditorWebpackPlugin( {
 			// UI language. Language codes follow the https://en.wikipedia.org/wiki/ISO_639-1 format.
+			// When changing the builtin language, remember to also change it in the ditor's config (src/ckeditor.js).
+			//
 			// See: https://docs.ckeditor.com/ckeditor5/latest/features/ui-language.html
 			language: 'en',
 			additionalLanguages: 'all'
