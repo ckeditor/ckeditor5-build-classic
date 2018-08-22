@@ -1,5 +1,5 @@
 {
-  "name": "@ckeditor/ckeditor5-build-classic",
+  "name": "@asta360/ckeditor5-build-classic",
   "version": "11.0.1",
   "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
@@ -29,6 +29,7 @@
     "@ckeditor/ckeditor5-autoformat": "^10.0.2",
     "@ckeditor/ckeditor5-basic-styles": "^10.0.2",
     "@ckeditor/ckeditor5-block-quote": "^10.0.2",
+    "@ckeditor/ckeditor5-core": "^11.0.0",
     "@ckeditor/ckeditor5-dev-utils": "^10.0.0",
     "@ckeditor/ckeditor5-dev-webpack-plugin": "^6.0.0",
     "@ckeditor/ckeditor5-easy-image": "^10.0.2",
@@ -53,15 +54,21 @@
     "npm": ">=3.0.0"
   },
   "author": "CKSource (http://cksource.com/)",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0",
   "homepage": "https://ckeditor.com",
-  "bugs": "https://github.com/ckeditor/ckeditor5-build-classic/issues",
+  "bugs": {
+    "url": "https://github.com/ckeditor/ckeditor5-build-classic/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5-build-classic.git"
+    "url": "git+https://github.com/ckeditor/ckeditor5-build-classic.git"
   },
   "scripts": {
     "build": "webpack --mode production",
     "preversion": "npm run build; if [ -n \"$(git status src/ckeditor.js build/ --porcelain)\" ]; then git add -u src/ckeditor.js build/ && git commit -m 'Internal: Build.'; fi"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {}
 }
