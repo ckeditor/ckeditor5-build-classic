@@ -1,7 +1,7 @@
 {
-  "name": "@ckeditor/ckeditor5-build-classic",
-  "version": "11.0.1",
-  "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
+  "name": "@ckeditor/ckeditor5-build-complete",
+  "version": "1.0.0",
+  "description": "The complete editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
     "ckeditor5-build",
     "ckeditor",
@@ -18,29 +18,35 @@
     "collaboration",
     "collaborative",
     "real-time",
-    "framework"
+    "framework",
+    "ckeditor complete"
   ],
   "main": "./build/ckeditor.js",
   "files": [
     "build"
   ],
   "devDependencies": {
+    "@ckeditor/ckeditor5-editor-classic": "^11.0.0",
     "@ckeditor/ckeditor5-adapter-ckfinder": "^10.0.2",
+    "@ckeditor/ckeditor5-alignment": "^10.0.2",
     "@ckeditor/ckeditor5-autoformat": "^10.0.2",
     "@ckeditor/ckeditor5-basic-styles": "^10.0.2",
     "@ckeditor/ckeditor5-block-quote": "^10.0.2",
     "@ckeditor/ckeditor5-dev-utils": "^11.0.0",
     "@ckeditor/ckeditor5-dev-webpack-plugin": "^7.0.0",
     "@ckeditor/ckeditor5-easy-image": "^10.0.2",
-    "@ckeditor/ckeditor5-editor-classic": "^11.0.0",
+    "@ckeditor/ckeditor5-editor-decoupled": "^11.0.0",
     "@ckeditor/ckeditor5-essentials": "^10.1.1",
+    "@ckeditor/ckeditor5-font": "^10.0.2",
     "@ckeditor/ckeditor5-heading": "^10.0.2",
+    "@ckeditor/ckeditor5-highlight": "^10.0.2",
     "@ckeditor/ckeditor5-image": "^10.2.0",
     "@ckeditor/ckeditor5-link": "^10.0.3",
     "@ckeditor/ckeditor5-list": "^11.0.1",
     "@ckeditor/ckeditor5-paragraph": "^10.0.2",
     "@ckeditor/ckeditor5-theme-lark": "^11.0.0",
     "@ckeditor/ckeditor5-upload": "^10.0.2",
+    "@ckeditor/ckeditor5-table": "^10.1.0",
     "postcss-loader": "^2.1.5",
     "raw-loader": "^0.5.1",
     "style-loader": "^0.21.0",
