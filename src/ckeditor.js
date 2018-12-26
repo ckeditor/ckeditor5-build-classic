@@ -27,6 +27,8 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';     // alignment feature plugin 
+
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -52,7 +54,9 @@ ClassicEditor.builtinPlugins = [
 	Paragraph,
 	PasteFromOffice,
 	Table,
-	TableToolbar
+	TableToolbar,
+	Alignment 		// included in the build                                                           
+
 ];
 
 // Editor configuration.
@@ -60,18 +64,22 @@ ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
 			'heading',
-			'|',
-			'bold',
-			'italic',
-			'link',
-			'bulletedList',
-			'numberedList',
-			'imageUpload',
-			'blockQuote',
-			'insertTable',
-			'mediaEmbed',
-			'undo',
-			'redo'
+				'|',
+				'bold',
+				'italic',
+				'blockQuote',
+				'bulletedList',
+				'numberedList',
+				'link',
+				'alignment:left', 		// added alignment:left to toolbar
+				'alignment:right',		// added alignment:right to toolbar
+				'alignment:center',		// added alignment:center to toolbar
+				'alignment:justify',		// added alignment:justify to toolbar
+				'imageUpload',
+				'mediaEmbed',
+				'insertTable',
+				'undo',
+				'redo'	
 		]
 	},
 	image: {
