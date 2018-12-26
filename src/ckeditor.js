@@ -29,7 +29,6 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';     // alignment feature plugin 
 
-
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
