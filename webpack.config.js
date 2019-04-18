@@ -1,6 +1,6 @@
 /**
  * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+ * For licensing, see LICENSE.md.
  */
 
 'use strict';
@@ -10,14 +10,33 @@
 const path = require( 'path' );
 const webpack = require( 'webpack' );
 const { bundler, styles } = require( '@ckeditor/ckeditor5-dev-utils' );
-const CKEditorWebpackPlugin = require( '@ckeditor/ckeditor5-dev-webpack-plugin' );
-const UglifyJsWebpackPlugin = require( 'uglifyjs-webpack-plugin' );
+
+const glob = require( 'glob' );
+
+const postCSSConfig = styles.getPostCssConfig( {
+	themeImporter: {
+		themePath: require.resolve( '@ckeditor/ckeditor5-theme-lark' )
+	},
+	minify: false
+} );
+
+postCSSConfig.plugins.push(
+	require( 'postcss-custom-properties' )( {
+		importFrom: glob.sync( './../../**/theme/**/*.css' )
+	} )
+);
 
 module.exports = {
 	devtool: 'source-map',
 	performance: { hints: false },
 
-	entry: path.resolve( __dirname, 'src', 'ckeditor.js' ),
+	entry: [
+		require.resolve( '@babel/polyfill' ),
+		require.resolve( 'unorm' ),
+		require.resolve( './src/ie11-polyfills.js' ),
+		require.resolve( 'regenerator-runtime/runtime.js' ),
+		path.resolve( __dirname, 'src', 'ckeditor.js' ),
+	],
 
 	output: {
 		// The name under which the editor will be exported.
@@ -30,26 +49,10 @@ module.exports = {
 	},
 
 	optimization: {
-		minimizer: [
-			new UglifyJsWebpackPlugin( {
-				sourceMap: true,
-				uglifyOptions: {
-					output: {
-						// Preserve CKEditor 5 license comments.
-						comments: /^!/
-					}
-				}
-			} )
-		]
+		minimizer: []
 	},
 
 	plugins: [
-		new CKEditorWebpackPlugin( {
-			// UI language. Language codes follow the https://en.wikipedia.org/wiki/ISO_639-1 format.
-			// When changing the built-in language, remember to also change it in the editor's configuration (src/ckeditor.js).
-			language: 'en',
-			additionalLanguages: 'all'
-		} ),
 		new webpack.BannerPlugin( {
 			banner: bundler.getLicenseBanner(),
 			raw: true
@@ -63,6 +66,38 @@ module.exports = {
 				use: [ 'raw-loader' ]
 			},
 			{
+				test: /ckeditor5-[^/\\]+[/\\].*\.js$/,
+				use: [
+					{
+						loader: 'babel-loader',
+						options: {
+							presets: [
+								[
+									'@babel/preset-env', {
+										debug: true
+									}
+								]
+							],
+							plugins: [
+								[
+									'@babel/plugin-transform-modules-commonjs', {
+										strictMode: false
+									}
+								]
+							]
+						}
+					}
+				]
+			},
+			{
+				test: /\.js$/,
+				use: [
+					{
+						loader: require.resolve( './src/remove-strict.js' )
+					}
+				]
+			},
+			{
 				test: /\.css$/,
 				use: [
 					{
@@ -73,13 +108,8 @@ module.exports = {
 					},
 					{
 						loader: 'postcss-loader',
-						options: styles.getPostCssConfig( {
-							themeImporter: {
-								themePath: require.resolve( '@ckeditor/ckeditor5-theme-lark' )
-							},
-							minify: true
-						} )
-					},
+						options: postCSSConfig
+					}
 				]
 			}
 		]
