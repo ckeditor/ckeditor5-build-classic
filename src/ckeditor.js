@@ -18,6 +18,7 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 
 import './ckeditor.css';
+import CodeBlock from '@mcfreddie777/ckeditor5-code-block/src/codeblock';
 
 export default class UserVoiceEditor extends ClassicEditorBase { }
 
@@ -26,6 +27,7 @@ UserVoiceEditor.builtinPlugins = [
 	Essentials,
 	Autoformat,
 	Bold,
+	CodeBlock,
 	Italic,
 	BlockQuote,
 	Link,
@@ -43,6 +45,7 @@ UserVoiceEditor.defaultConfig = {
 			'|',
 			'bold',
 			'italic',
+			'codeBlock',
 			'link',
 			'bulletedList',
 			'numberedList',
