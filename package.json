@@ -44,6 +44,7 @@
     "@ckeditor/ckeditor5-media-embed": "^11.1.3",
     "@ckeditor/ckeditor5-paragraph": "^11.0.4",
     "@ckeditor/ckeditor5-paste-from-office": "^11.0.4",
+    "@ckeditor/ckeditor5-remove-format": "^10.0.3",
     "@ckeditor/ckeditor5-table": "^13.0.2",
     "@ckeditor/ckeditor5-theme-lark": "^14.1.1",
     "eslint": "^5.5.0",
