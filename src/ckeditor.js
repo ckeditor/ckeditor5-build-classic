@@ -15,7 +15,7 @@ import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
-import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
+import Font from '@ckeditor/ckeditor5-font/src/font';
 import Image from '@ckeditor/ckeditor5-image/src/image';
 import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
@@ -44,7 +44,7 @@ ClassicEditor.builtinPlugins = [
 	BlockQuote,
 	CKFinder,
 	EasyImage,
-	Highlight,
+	Font,
 	Image,
 	ImageCaption,
 	ImageStyle,
@@ -69,7 +69,8 @@ ClassicEditor.defaultConfig = {
 			'italic',
 			'underline',
 			'strikethrough',
-			'highlight',
+			'fontColor',
+			'fontBackgroundColor',
 			'|',
 			'link',
 			'|',
@@ -97,31 +98,6 @@ ClassicEditor.defaultConfig = {
 			'alignLeft',
 			// This represents an image aligned to the right.
 			'alignRight'
-		]
-	},
-	highlight: {
-		options: [
-			{
-				model: 'greenMarker',
-				class: 'marker-green',
-				title: 'Green marker',
-				color: 'rgb(25, 156, 25)',
-				type: 'marker'
-			},
-			{
-				model: 'yellowMarker',
-				class: 'marker-yellow',
-				title: 'Yellow marker',
-				color: '#cac407',
-				type: 'marker'
-			},
-			{
-				model: 'redPen',
-				class: 'pen-red',
-				title: 'Red pen',
-				color: 'hsl(343, 82%, 58%)',
-				type: 'pen'
-			}
 		]
 	},
 	indentBlock: {
