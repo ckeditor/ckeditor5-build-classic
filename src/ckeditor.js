@@ -70,8 +70,8 @@ ClassicEditor.defaultConfig = {
 			'underline',
 			'strikethrough',
 			'|',
-			'indent',
 			'outdent',
+			'indent',
 			'|',
 			'blockQuote',
 			'alignment',
@@ -116,6 +116,10 @@ ClassicEditor.defaultConfig = {
 				type: 'pen'
 			}
 		]
+	},
+	indentBlock: {
+		offset: 1,
+		unit: 'em'
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en'
