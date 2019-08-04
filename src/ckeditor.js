@@ -65,24 +65,23 @@ ClassicEditor.builtinPlugins = [
 ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
-			'removeFormat',
-			'|',
 			'bold',
 			'italic',
 			'underline',
 			'strikethrough',
+			'highlight',
 			'|',
-			'outdent',
-			'indent',
+			'link',
 			'|',
-			'blockQuote',
 			'alignment',
 			'|',
 			'numberedList',
 			'bulletedList',
+			'outdent',
+			'indent',
+			'blockQuote',
 			'|',
-			'link',
-			'highlight'
+			'removeFormat'
 		]
 	},
 	image: {
