@@ -80,8 +80,7 @@ ClassicEditor.defaultConfig = {
 			'bulletedList',
 			'|',
 			'link',
-			'highlight',
-			'imageUpload'
+			'highlight'
 		]
 	},
 	image: {
