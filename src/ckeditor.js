@@ -28,7 +28,6 @@ import List from '@ckeditor/ckeditor5-list/src/list';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
-import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 
 export default class ClassicEditor extends ClassicEditorBase {}
@@ -57,7 +56,6 @@ ClassicEditor.builtinPlugins = [
 	Paragraph,
 	PasteFromOffice,
 	RemoveFormat,
-	Strikethrough,
 	Underline
 ];
 
@@ -70,7 +68,6 @@ ClassicEditor.defaultConfig = {
 			'bold',
 			'italic',
 			'underline',
-			'strikethrough',
 			'fontColor',
 			'fontBackgroundColor',
 			'|',
