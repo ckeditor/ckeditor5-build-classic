@@ -91,6 +91,7 @@ ClassicEditor.defaultConfig = {
 			10,
 			11,
 			12,
+			'default',
 			14,
 			18,
 			24,
