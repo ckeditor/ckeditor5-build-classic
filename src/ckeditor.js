@@ -63,6 +63,7 @@ ClassicEditor.builtinPlugins = [
 ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
+			'fontFamily',
 			'fontSize',
 			'|',
 			'bold',
