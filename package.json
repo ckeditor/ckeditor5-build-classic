@@ -25,8 +25,8 @@
     "build"
   ],
   "devDependencies": {
-    "@ckeditor/ckeditor5-alignment": "^11.2.0",
     "@ckeditor/ckeditor5-adapter-ckfinder": "^11.0.5",
+    "@ckeditor/ckeditor5-alignment": "^11.2.0",
     "@ckeditor/ckeditor5-autoformat": "^11.0.5",
     "@ckeditor/ckeditor5-basic-styles": "^11.1.4",
     "@ckeditor/ckeditor5-block-quote": "^11.1.3",
