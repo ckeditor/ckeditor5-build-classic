@@ -27,6 +27,7 @@ import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
+import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
@@ -57,6 +58,7 @@ ClassicEditor.builtinPlugins = [
 	IndentBlock,
 	Link,
 	List,
+	MediaEmbed,
 	Paragraph,
 	PasteFromOffice,
 	RemoveFormat,
@@ -77,6 +79,7 @@ ClassicEditor.defaultConfig = {
 			'fontBackgroundColor',
 			'|',
 			'link',
+			'mediaEmbed',
 			'|',
 			'alignment',
 			'|',
