@@ -1,12 +1,14 @@
 {
-  "name": "@ckeditor/ckeditor5-build-classic",
-  "version": "15.0.0",
-  "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
+  "name": "@renku/renku-ui-ckeditor5-build",
+  "version": "0.0.1",
+  "description": "A superbuild of CKEDITOR5 that includes the classic editor (ClassicEditor) build and a markdown build (RenkuMarkdownEditor).",
   "keywords": [
     "ckeditor5-build",
     "ckeditor",
     "ckeditor5",
     "ckeditor 5",
+    "markdown",
+    "ckeditor-markdown",
     "wysiwyg",
     "rich text",
     "editor",
@@ -61,13 +63,13 @@
     "node": ">=8.0.0",
     "npm": ">=5.7.1"
   },
-  "author": "CKSource (http://cksource.com/)",
+  "author": "SwissDataScienceCenter for Renku Project",
   "license": "GPL-2.0-or-later",
-  "homepage": "https://ckeditor.com/ckeditor-5",
-  "bugs": "https://github.com/ckeditor/ckeditor5/issues",
+  "homepage": "https://github.com/SwissDataScienceCenter/renku-ui-ckeditor5-build-classic",
+  "bugs": "https://github.com/SwissDataScienceCenter/renku-ui-ckeditor5-build-classic/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5-build-classic.git"
+    "url": "https://github.com/SwissDataScienceCenter/renku-ui-ckeditor5-build-classic.git"
   },
   "scripts": {
     "build": "webpack --mode production",
@@ -87,5 +89,8 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-markdown-gfm": "^15.0.0"
   }
 }
