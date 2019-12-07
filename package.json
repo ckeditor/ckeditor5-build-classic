@@ -57,7 +57,8 @@
     "style-loader": "^1.0.0",
     "terser-webpack-plugin": "^2.2.1",
     "webpack": "^4.39.1",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.9.0"
   },
   "engines": {
     "node": ">=8.0.0",
@@ -72,6 +73,7 @@
     "url": "https://github.com/ckeditor/ckeditor5-build-classic.git"
   },
   "scripts": {
+    "start": "webpack-dev-server",
     "build": "webpack --mode production",
     "lint": "eslint --quiet '**/*.js'",
     "stylelint": "stylelint --quiet --allow-empty-input 'theme/**/*.css' 'docs/**/*.css'",
