@@ -7,6 +7,16 @@
 import ClassicEditorBase from '@ckeditor/ckeditor5-editor-classic/src/classiceditor';
 
 import Font from '@ckeditor/ckeditor5-font/src/font';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
+import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
+import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript';
+import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript';
+import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
+import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
+import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
+
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
 import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
@@ -56,7 +66,16 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	Font
+	Font,
+	Alignment,
+	TextTransformation,
+	Underline,
+	Strikethrough,
+	Subscript,
+	Superscript,
+	Highlight,
+	HorizontalLine,
+	RemoveFormat
 ];
 
 // Editor configuration.
@@ -67,13 +86,26 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'bold',
 			'italic',
+			'underline',
+			'strikethrough',
+			'subscript',
+			'superscript',
+			'removeFormat',
+			'|',
 			'fontFamily',
+			'fontSize',
+			'fontColor',
+			'|',
+			'highlight',
 			'link',
 			'bulletedList',
 			'numberedList',
 			'|',
 			'indent',
 			'outdent',
+			'alignment',
+			'|',
+			'horizontalLine',
 			'|',
 			'imageUpload',
 			'blockQuote',
