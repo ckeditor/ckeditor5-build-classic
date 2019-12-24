@@ -129,6 +129,14 @@ ClassicEditor.defaultConfig = {
 		offset: 1,
 		unit: 'em'
 	},
+	mediaEmbed: {
+		extraProviders: [
+			{
+				name: 'loom',
+				url: /^(www\.)?loom\.com/
+			}
+		]
+	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en'
 };
