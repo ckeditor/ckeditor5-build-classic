@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ckeditor">
+    <output-path>$PROJECT_DIR$/out/artifacts/ckeditor</output-path>
+    <root id="archive" name="ckeditor.war" />
+  </artifact>
+</component>

@@ -5,6 +5,9 @@
 
 // The editor creator to use.
 import ClassicEditorBase from '@ckeditor/ckeditor5-editor-classic/src/classiceditor';
+import InlineEditorBase from '@ckeditor/ckeditor5-editor-inline/src/inlineeditor';
+import DecoupledEditorBase from '@ckeditor/ckeditor5-editor-decoupled/src/decouplededitor';
+import BalloonEditorBase from '@ckeditor/ckeditor5-editor-balloon/src/ballooneditor';
 
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
 import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
@@ -29,13 +32,15 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
-export default class ClassicEditor extends ClassicEditorBase {}
+export class ClassicEditor extends ClassicEditorBase {}
+export class InlineEditor extends InlineEditorBase {}
+export class DcoupledEditor extends DecoupledEditorBase {}
+export class BalloonEditor extends BalloonEditorBase {}
 
-// Plugins to include in the build.
-ClassicEditor.builtinPlugins = [
-	Essentials,
-	UploadAdapter,
+const plugins = [
 	Autoformat,
+	UploadAdapter,
+	BlockQuote,
 	Bold,
 	Italic,
 	BlockQuote,
@@ -48,17 +53,23 @@ ClassicEditor.builtinPlugins = [
 	ImageToolbar,
 	ImageUpload,
 	Indent,
+	Italic,
 	Link,
 	List,
 	MediaEmbed,
-	Paragraph,
 	PasteFromOffice,
 	Table,
-	TableToolbar
+	TableToolbar,
+	Essentials,
+	Paragraph
 ];
+// Plugins to include in the build.
+ClassicEditor.builtinPlugins = plugins;
+InlineEditor.builtinPlugins = plugins;
+BalloonEditor.builtinPlugins = plugins;
+DcoupledEditor.builtinPlugins = plugins;
 
-// Editor configuration.
-ClassicEditor.defaultConfig = {
+const config = {
 	toolbar: {
 		items: [
 			'heading',
@@ -97,4 +108,13 @@ ClassicEditor.defaultConfig = {
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en'
+};
+// Editor configuration.
+ClassicEditor.defaultConfig = config;
+InlineEditor.defaultConfig = config;
+BalloonEditor.defaultConfig = config;
+DcoupledEditor.defaultConfig = config;
+
+export default {
+	ClassicEditor, InlineEditor, BalloonEditor, DcoupledEditor
 };
