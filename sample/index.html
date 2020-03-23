@@ -1,41 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
-	<title>CKEditor 5 – classic editor build – development sample</title>
-	<style>
-		body {
-			max-width: 800px;
-			margin: 20px auto;
-		}
-	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CKEditor 5 classic example with math plugin</title>
 </head>
+
 <body>
+<h1>CKEditor 5 – classic editor build – math plugin sample</h1>
 
-<h1>CKEditor 5 – classic editor build – development sample</h1>
+<h2>Example TeX equations</h2>
+<b>Math</b>
+<pre>x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}</pre>
+<b>Chem</b>
+<pre>\ce{CH4 + 2 O2 -> CO2 + 2 H2O}</pre>
 
+<h2>Preview editor</h2>
 <div id="editor">
-	<h2>Sample</h2>
-
-	<p>This is an instance of the <a href="https://ckeditor.com/docs/ckeditor5/latest/builds/guides/overview.html#classic-editor">classic editor build</a>.</p>
-
-	<figure class="image">
-		<img src="../tests/manual/sample.jpg" alt="Autumn fields" />
-	</figure>
-
-	<p>You can use this sample to validate whether your <a href="https://ckeditor.com/docs/ckeditor5/latest/builds/guides/development/custom-builds.html">custom build</a> works fine.</p>
+	<p>Lorem... <span class="math-tex"> \(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a} \) </span> ...ipsum</p>
+	<p>Lorem... <span class="math-tex"> \[ x=\frac{-b\pm\sqrt{b^2-4ac}}{2a} \] </span> ...ipsum</p>
+	<p>Lorem... <script type="math/tex">x+\sqrt{1-x^2}</script> ...ipsum</p>
+	<p>Lorem... <script type="math/tex; mode=display">x+\sqrt{1-x^2}</script> ...ipsum</p>
 </div>
 
-<script src="../build/ckeditor.js"></script>
-<script>
-	ClassicEditor.create( document.querySelector( '#editor' ) )
-		.then( editor => {
-			window.editor = editor;
-		} )
-		.catch( error => {
-			console.error( 'There was a problem initializing the editor.', error );
-		} );
-</script>
+<h2>Preview editor data in HTML</h2>
+<div id="editor-preview"></div>
 
+<h2>Preview editor data in text</h2>
+<pre id="editor-preview-html" style="word-wrap: break-word; white-space: pre-wrap;"></pre>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+	MathJax.Ajax.config.path["mhchem"] = "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.2";
+	MathJax.Hub.Config({
+		showMathMenu: false,
+		TeX: {
+			extensions: [ "[mhchem]/mhchem.js" ]
+		},
+		messageStyle: "none",
+		tex2jax: {
+			preview: "none"
+		}
+	});
+</script>
+<script src="../build/ckeditor.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@ckeditor/ckeditor5-inspector@1.4.0/build/inspector.js"></script>
+<script>
+	ClassicEditor.create(document.querySelector('#editor'), {
+		math: {
+			engine: 'mathjax',
+			outputType: 'script',
+			forceOutputType: false,
+			enablePreview: true
+		}
+	})
+		.then(editor => {
+			CKEditorInspector.attach(editor);
+			window.ckeditor = editor;
+			getData();
+			editor.model.document.on('change:data', () => {
+				getData();
+			});
+		})
+		.catch(err => {
+			console.error(err);
+		});
+
+	function getData() {
+		const data = window.ckeditor.getData();
+
+		// HTML
+		const preview = document.getElementById('editor-preview');
+		preview.innerHTML = data;
+		MathJax.Hub.Queue(["Typeset", MathJax.Hub, preview]); // MathJax 2
+
+		// Text
+		document.getElementById('editor-preview-html').innerText = data;
+	}
+
+</script>
 </body>
+
 </html>
