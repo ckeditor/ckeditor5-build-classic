@@ -29,6 +29,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -56,7 +57,8 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation
+	TextTransformation,
+	CodeBlock
 ];
 
 // Editor configuration.
@@ -70,6 +72,7 @@ ClassicEditor.defaultConfig = {
 			'link',
 			'bulletedList',
 			'numberedList',
+			'codeBlock',
 			'|',
 			'indent',
 			'outdent',
@@ -97,6 +100,23 @@ ClassicEditor.defaultConfig = {
 			'mergeTableCells'
 		]
 	},
+	codeBlock: {
+        languages: [
+          { language: 'plaintext', label: 'Plain text' },
+          { language: 'c', label: 'C' },
+          { language: 'cs', label: 'C#' },
+          { language: 'cpp', label: 'C++' },
+          { language: 'css', label: 'CSS' },
+          { language: 'diff', label: 'Diff' },
+          { language: 'xml', label: 'HTML/XML' },
+          { language: 'java', label: 'Java' },
+          { language: 'javascript', label: 'JavaScript' },
+          { language: 'php', label: 'PHP' },
+          { language: 'python', label: 'Python' },
+          { language: 'ruby', label: 'Ruby' },
+          { language: 'typescript', label: 'TypeScript' }
+        ]
+      },
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en'
 };
