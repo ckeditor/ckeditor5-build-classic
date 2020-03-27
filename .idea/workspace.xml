@@ -4,66 +4,66 @@
     <list default="true" id="ff802a19-99ca-441c-b858-8a45ecc8a93f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ckeditor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ckeditor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/ckeditor.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/af.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/ar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/ast.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/ast.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/az.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/az.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/cs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/da.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/de-ch.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/de-ch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/el.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/en-au.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/en-au.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/en-gb.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/en-gb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/eo.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/eo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/et.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/eu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/fi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/gl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/gu.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/gu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/he.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/hr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/km.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/km.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/kn.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/kn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/ku.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/ku.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/lt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/lv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/ms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/nb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/ne.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/ne.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/no.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/no.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/oc.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/oc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/pt-br.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/pt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/ro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/si.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/si.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/sl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/sq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/sr-latn.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/sr-latn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/sr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/sv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/tt.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/tt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/ug.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/ug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/uk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/vi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/zh-cn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translations/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/zh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ckeditor.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/ast.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/de-ch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/en-au.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/en-gb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/gu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/kn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/ku.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/ne.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/oc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/si.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/sq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/sr-latn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/tt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/translations/zh.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ckeditor.js" afterDir="false" />
@@ -80,10 +80,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ckeditor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
+            <state relative-caret-position="-1242">
               <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
               <folding>
                 <element signature="e#211#296#0" expanded="true" />
@@ -115,10 +115,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
+            <state relative-caret-position="90">
               <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
             </state>
           </provider>
@@ -148,8 +148,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="712" />
-    <option name="y" value="152" />
+    <option name="x" value="-4" />
+    <option name="y" value="138" />
     <option name="width" value="2744" />
     <option name="height" value="1550" />
   </component>
@@ -164,6 +164,11 @@
             <path>
               <item name="ckeditor5-build-classic" type="b2602c69:ProjectViewProjectNode" />
               <item name="ckeditor5-build-classic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ckeditor5-build-classic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ckeditor5-build-classic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -246,15 +251,15 @@
       <workItem from="1582798076544" duration="1030000" />
       <workItem from="1583316446687" duration="293000" />
       <workItem from="1584443751912" duration="1064000" />
-      <workItem from="1585285677795" duration="2767000" />
+      <workItem from="1585285677795" duration="3420000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21667000" />
+    <option name="totallyTimeSpent" value="22320000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="356" y="76" width="1372" height="775" extended-state="0" />
+    <frame x="-2" y="69" width="1372" height="775" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28386605" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -274,7 +279,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.37209302" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.4356589" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -305,16 +310,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ckeditor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
-          <folding>
-            <element signature="e#211#296#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -341,8 +336,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
+        <state relative-caret-position="90">
           <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ckeditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1242">
+          <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
+          <folding>
+            <element signature="e#211#296#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
