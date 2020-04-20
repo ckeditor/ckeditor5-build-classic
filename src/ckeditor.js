@@ -85,6 +85,9 @@ ClassicEditor.defaultConfig = {
 			'redo'
 		]
 	},
+  alignment: {
+    options: [ 'left', 'right' ]
+  },
 	image: {
 		toolbar: [
 			'imageStyle:full',
