@@ -73,7 +73,6 @@ ClassicEditor.defaultConfig = {
       '|',
       'alignment',
 			'|',
-			'|',
 			'indent',
 			'outdent',
 			'|',
@@ -86,7 +85,11 @@ ClassicEditor.defaultConfig = {
 		]
 	},
   alignment: {
-    options: [ 'left', 'right' ]
+    options: [
+      'left',
+      'center',
+      'right'
+    ]
   },
 	image: {
 		toolbar: [
