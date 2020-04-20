@@ -85,7 +85,7 @@ ClassicEditor.defaultConfig = {
 		]
 	},
   alignment: {
-    options: [
+    toolbar: [
       'left',
       'center',
       'right'
