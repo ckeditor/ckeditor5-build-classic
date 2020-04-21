@@ -90,17 +90,6 @@ ClassicEditor.defaultConfig = {
 			'redo'
 		]
 	},
-  fontSize: {
-      options: [
-          8,
-          10,
-          12,
-          14,
-          18,
-          24,
-          36
-      ]
-  },
   alignment: {
     options: [
       'left',
