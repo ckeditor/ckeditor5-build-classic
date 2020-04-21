@@ -90,12 +90,27 @@ ClassicEditor.defaultConfig = {
 			'redo'
 		]
 	},
+  fontSize: {
+      options: [
+          8,
+          10,
+          12,
+          14,
+          18,
+          24,
+          36
+      ]
+  },
   alignment: {
-    toolbar: [
+    options: [
       'left',
       'center',
       'right'
     ]
+  },
+  indentBlock: {
+      offset: 1,
+      unit: 'em'
   },
 	image: {
 		toolbar: [
