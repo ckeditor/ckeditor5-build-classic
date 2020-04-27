@@ -1,4 +1,4 @@
-CKEditor 5 classic editor build
+CKEditor 5 classic editor build - Dimulski edit
 ========================================
 
 [![npm version](https://badge.fury.io/js/%40ckeditor%2Fckeditor5-build-classic.svg)](https://www.npmjs.com/package/@ckeditor/ckeditor5-build-classic)
