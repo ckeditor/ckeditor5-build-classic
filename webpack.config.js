@@ -29,6 +29,16 @@ module.exports = {
 		libraryExport: 'default'
 	},
 
+	devServer: {
+		publicPath: '/assets/',
+		contentBase: [
+			path.resolve( __dirname, 'sample' ),
+			path.resolve( __dirname, 'tests' ),
+		],
+		watchContentBase: true,
+		compress: true
+	},
+
 	optimization: {
 		minimizer: [
 			new TerserPlugin( {
