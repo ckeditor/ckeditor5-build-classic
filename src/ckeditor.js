@@ -29,6 +29,20 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor.js';
+import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor.js';
+import FontSize from '@ckeditor/ckeditor5-font/src/fontsize.js';
+import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily.js';
+import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight.js';
+import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak.js';
+import SpecialCharacters from '@ckeditor/ckeditor5-special-characters/src/specialcharacters.js';
+import SpecialCharactersCurrency from '@ckeditor/ckeditor5-special-characters/src/specialcharacterscurrency.js';
+import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript.js';
+import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript.js';
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
+import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount.js';
+import Code from '@ckeditor/ckeditor5-basic-styles/src/code.js';
+import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock.js';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -56,7 +70,21 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation
+	TextTransformation,
+	FontBackgroundColor,
+	FontColor,
+	FontSize,
+	FontFamily,
+	Highlight,
+	PageBreak,
+	SpecialCharacters,
+	SpecialCharactersCurrency,
+	Subscript,
+	Superscript,
+	Underline,
+	WordCount,
+	Code,
+	CodeBlock
 ];
 
 // Editor configuration.
@@ -91,11 +119,7 @@ ClassicEditor.defaultConfig = {
 		]
 	},
 	table: {
-		contentToolbar: [
-			'tableColumn',
-			'tableRow',
-			'mergeTableCells'
-		]
+		contentToolbar: [ 'tableColumn', 'tableRow', 'mergeTableCells' ]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en'
