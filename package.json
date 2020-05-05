@@ -80,7 +80,7 @@
   },
   "scripts": {
     "build": "webpack --mode production",
-    "lint": "eslint --quiet '**/*.js'",
+    "lint": "eslint --quiet src/**/*.js",
     "lint-fix": "eslint --fix src/**/*.{js,jsx,ts,tsx,json,css,scss,md}",
     "stylelint": "stylelint --quiet --allow-empty-input 'theme/**/*.css' 'docs/**/*.css'",
     "preversion": "npm run build; if [ -n \"$(git status src/ckeditor.js build/ --porcelain)\" ]; then git add -u src/ckeditor.js build/ && git commit -m 'Internal: Build.'; fi"
